@@ -1,0 +1,52 @@
+html,
+body {
+    font-family: helvetica, sans-serif;
+}
+
+.loader {
+    display: block;
+    text-align: center;
+}
+
+.rotator {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    background: transparent;
+
+}
+
+div[class^="spin"] {
+    display: inline-block;
+    position: relative;
+    padding: 3px;
+    margin: 0;
+    font-size: 0;
+
+    border: 3px solid transparent;
+    border-top-color: black;
+    border-radius: 50%;
+
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    overflow: hidden;
+}
+
+.spin99 {
+    animation-duration: 3s;
+}
+
+.spin99.last {
+    padding: 10px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
