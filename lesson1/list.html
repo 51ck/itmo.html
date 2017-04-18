@@ -7,22 +7,35 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <a href="../index.html">HTML</a> > <a href="template.html">lesson1</a>
-        <br />
+        <nav>
+            <a href="../index.html">HTML</a> > <a href="template.html">lesson1</a>
+            <ul class="menu">
+                <li><a href="text.html">текст</a></li>
+                <li><a href="image.html">изображения</a></li>
+                <li><a href="link.html">ссылки</a></li>
+                <li><a href="list.html">списки</a></li>
+                <li><a href="table.html">таблицы</a></li>
+            </ul>
+        </nav>
+
+        <h2>Списки</h2>
+
         <p>Списки - блочные элементы</p>
-        <p>неупорядоченный
-        <br />
-        аттрибут type (disk/circle/square)</p>
+        <h3>неупорядоченный</h3>
+        <p>аттрибут type (disk/circle/square)</p>
         <ul>
             <li type="disk">Элемент списка</li>
             <li type="square">Ещё один</li>
             <li type="circle">Поседний</li>
         </ul>
-        <p>упорядоченный<br />
+
+        <h3>упорядоченный</h3>
+        <p>
         аттрибут type (1/A/a/I/i)<br />
         аттрибут start<br />
         аттрибут reversed
         </p>
+
         <ol>
             <li type="1">номер</li>
             <li type="a">буква</li>
@@ -31,7 +44,7 @@
             <li type="I">РИМСКИЕ</li>
         </ol>
 
-        <p>список определений</p>
+        <h3>список определений</h3>
         <dl>
             <dt>Термин1</dt>
             <dd>Определение1</dd>

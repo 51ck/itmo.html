@@ -2,3 +2,66 @@ html,
 body {
     font-family: sans-serif;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,
+td {
+    padding: 10px;
+}
+
+tr:nth-child(3) td:nth-child(2) {
+    display: none;
+}
+
+pre {
+    margin: 5px 15px;
+    padding: 15px;
+    font-size: 1.5em;
+    border-left: 5px solid grey;
+    background: lightgrey;
+    /*font-family: Monaco, monospace;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.tag {
+    color: darkred;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.attribute {
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+.value {
+    color: gray;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/*//// images ////*/
+
+.img-container {
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    border: 1px dashed green;
+}

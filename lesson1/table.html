@@ -7,12 +7,20 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-        <a href="../index.html">HTML</a> > <a href="template.html">lesson1</a>
-        <br />
+        <nav>
+            <a href="../index.html">HTML</a> > <a href="template.html">lesson1</a>
+            <ul class="menu">
+                <li><a href="text.html">текст</a></li>
+                <li><a href="image.html">изображения</a></li>
+                <li><a href="link.html">ссылки</a></li>
+                <li><a href="list.html">списки</a></li>
+                <li><a href="table.html">таблицы</a></li>
+            </ul>
+        </nav>
 
-        <p>Таблицы</p>
+        <h2>Таблицы</h2>
 
-        <table border="1" >
+        <table>
             <caption>заголовок таблицы</caption>
             <tr>
                 <th>\</th>
@@ -21,7 +29,7 @@
             </tr>
             <tr>
                 <th>заголовок строки 1</th>
-                <td>ячейка 1 1</td>
+                <td rowspan="2">ячейка 1 1</td>
                 <td>ячейка 1 2</td>
             </tr>
             <tr>
