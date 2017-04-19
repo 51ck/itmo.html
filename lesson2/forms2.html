@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 forms</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">HTML</a>
+        <ul class="menu">
+            <li><a href="forms1.html">Формы 1</a></li>
+            <li><a href="forms2.html">Формы 2: HTML5</a></li>
+
+        </ul>
+    </nav>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend></legend>
+            <label ><input id="emailField" type="email" name="mail"
+                value="stop@email.me"> e-mail</label><br />
+
+            <label ><input id="urlField" type="url" name="url"
+                value="https://google.com/"> url</label><br />
+
+            <label ><input id="colorField" type="color" name="color"
+                value="#cccccc"> color</label><br />
+
+            <label ><input id="numberField" type="number" name="number"
+                value="6"
+                max="10"
+                min="0"
+                step="3"> number</label><br />
+
+            <label ><input id="rangeField" type="range" name="range"
+                value="6"
+                max="10"
+                min="0"
+                step="3"> range</label><br />
+
+            <label ><input id="dateField" type="date" name="date"
+                value="2015-12-26"> date</label><br />
+
+            <label ><input id="datetimeField" type="datetime" name="datetime"
+                value="2015-12-26T20:16"> datetime</label><br />
+
+            <label ><input id="datetime-localField" type="datetime-local" name="datetime-local"
+                value="2015-12-26T20:16"> datetime-local</label><br />
+
+            <label ><input id="timeField" type="time" name="time"
+                value="20:16"> time</label><br />
+
+            <label ><input id="searchField" type="search" name="search"
+                value="20:16"> search</label><br />
+
+            <label ><input id="telField" type="tel" name="tel"
+                pattern="+7\d{10}"> tel</label><br />
+
+
+        </fieldset>
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+</html>

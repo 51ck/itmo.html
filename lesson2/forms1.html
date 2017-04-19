@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">HTML</a>
+        <ul class="menu">
+            <li><a href="forms1.html">Формы 1</a></li>
+            <li><a href="forms2.html">Формы 2: HTML5</a></li>
+
+        </ul>
+    </nav>
+
+    <h1>Формы</h1>
+
+    <p>Тег form парный
+    аттрибуты action (url)
+    method (post/get)
+    target (_blanc ...)
+    autocomplete (on/of)</p>
+    <p>тег fieldset -> legend
+    </p>
+
+    <form
+        id="form_id"
+        action="#
+        method="post"
+        target=""
+        >
+            <fieldset
+                form="form_id"
+                disabled>
+                <legend>Welcome to the text fields moth****cker</legend>
+                <div>
+                    <p>input: type, name, placeholder</p>
+                    <label for="text-field">Текстовое поле</label>
+                    <input
+                            type="text"
+                            id="text-field"
+                            name=""
+                            placeholder="подсказка"
+                            required
+                            maxlength="8">
+                    <br />
+                    <label for="">Пароль</label>
+                    <input
+                            type="password"
+                            id="passwordField"
+                            name="pwd">
+                    <br />
+                    <label for="">
+                        <input
+                            type="hidden"
+                            id="hiddenField">
+                    </label><br />
+                    <label for=""></label>
+                        <textarea name="text"
+                            id="textArea"
+                            cols="30"
+                            rows="10"
+                            maxlength=""
+                            minlength=""
+                            placeholder="посказка"
+                            required
+                            disabled
+                            readonly
+                            autofocus>
+
+                            </textarea>
+                    <br />
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Загрузка файлов</legend>
+                <label for="fileField"></label><input type="file" id="fileField"><br />
+                <label for="imageField"></label><input type="file" id="imageField" accept="image/*"><br /><!-- audio/* video/* -->
+                <label for="multipleFileField"></label><input type="file" id="multipleFileField" multiple>
+            </fieldset>
+            <fieldset>
+                <legend>Радиокнопки</legend>
+                <label for=""><input type="radio" checked> радио-баттон</label> <br />
+                <fieldset>
+                    <legend>Радиогруппа</legend>
+                    <p>Необходимо задать одинаковы name</p>
+                    <label for=""><input type="radio" name=sex checked> male</label> <br />
+                    <label for=""><input type="radio" name=sex checked> female</label> <br />
+                    <label for=""><input type="radio" name=sex checked> shemale</label> <br />
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Чекбоксы</legend>
+                <label ><input type="checkbox" > поставь</label><br />
+                <label ><input type="checkbox" > галочку</label><br />
+                <label ><input type="checkbox" > тупой</label><br />
+                <label ><input type="checkbox" > ты</label><br />
+                <label ><input type="checkbox" > ублюдок</label><br />
+            </fieldset>
+            <fieldset>
+                <legend>Кнопки</legend>
+                <input type="button" value="input-button">
+                <input type="submit" value="input-submit">
+                <input type="reset" value="input-reset">
+                <input type="image" src="url картинки" alt="input-image">
+                <button>button</button>
+                <button type="submit">button-submit</button>
+                <button type="reset">button-reset</button>
+                Можно задать атрибуты formaction и formmethod. [type=submit] можно задать formnovalidate.
+            </fieldset>
+            <fieldset>
+                <select name="selector" id="selector"
+                autofocus
+                form="form_id"
+                size="3">
+                    <option value="1">point number 1</option>
+                    <option value="2" disabled>point number 2</option>
+                    <option value="3" selected>point number 3</option>
+                    <option value="4">point number 4</option>
+                    <option value="5">point number 5</option>
+                    <option value="6">point number 6</option>
+                </select>
+                <select name="selector2" id="selector2"
+                autofocus
+                form="form_id">
+                    <option value="1">point number 1</option>
+                    <option value="2" disabled>point number 2</option>
+                    <option value="3" selected>point number 3</option>
+                    <option value="4">point number 4</option>
+                    <option value="5">point number 5</option>
+                    <option value="6">point number 6</option>
+                </select>
+                <select name="selector2" id="selector2"
+                autofocus
+                form="form_id">
+                    <option value="1">point number 1</option>
+                    <option value="2" disabled>point number 2</option>
+                    <option value="3" selected>point number 3</option>
+                    <option value="4">point number 4</option>
+                    <option value="5">point number 5</option>
+                    <option value="6">point number 6</option>
+                </select>
+                <select name="selector2" id="selector2"
+                multiple
+                form="form_id">
+                    <option value="1">point number 1</option>
+                    <option value="2" disabled>point number 2</option>
+                    <option value="3" selected>point number 3</option>
+                    <option value="4">point number 4</option>
+                    <option value="5">point number 5</option>
+                    <option value="6">point number 6</option>
+                </select>
+                <select name="selector2" id="selector2"
+                multiple
+                form="form_id"
+                size="10">
+                    <optgroup label="label">
+                        <option value="2" disabled>point number 2</option>
+                        <option value="3" selected>point number 3</option>
+                    </optgroup>
+                    <optgroup label="inner label">
+                        <option value="1">point number 1</option>
+                    </optgroup>
+                    <option value="4">point number 4</option>
+                    <option value="5">point number 5</option>
+                    <option value="6">point number 6</option>
+                </select>
+            </fieldset>
+        </form>
+</body>
+</html>
