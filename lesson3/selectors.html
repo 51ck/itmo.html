@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Селекторы</title>
+    <link rel="stylesheet" href="static/styles/main.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html">HTML</a>
+        <ul class="menu">
+            <li><a href="addstyle.html">Подключение</a></li>
+            <li><a href="selectors.html">Селекторы</a></li>
+        </ul>
+    </nav>
+
+
+    <pre>
+        /* правило */
+        selector {
+            /* блок объявлений */
+            property: value;
+        }
+    </pre>
+    <pre>
+        /* класс */
+        .class {...}
+
+        /* тег */
+        tag {...}
+
+        /* идентификатор */
+        #id {...}
+
+        /* контекстные селекторы */
+        #id ~ tag > .class tag {...}
+    </pre>
+    <div class="head"></div>
+    <div class="stoplight">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <p>Населование</p>
+    <p class="red-text">потомок <span style="font-size: .5em">потомок потомка</span> потомок</p>
+
+</body>
+</html>

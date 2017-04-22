@@ -1,0 +1,67 @@
+.head {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-width: 20px;
+    border-left-width: 40px;
+    border-right-width: 40px;
+    border-bottom-color: green;
+}
+
+.stoplight {
+    box-sizing: border-box;
+    width: 80px;
+    background: green;
+    padding: 10px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 5px solid darkgray;
+    border-radius: 50%;
+    background: black;
+}
+
+.circle:first-child:hover {
+    background: red;
+}
+
+.circle:nth-child(2):hover {
+    background: orange;
+}
+
+.circle:last-child:hover {
+    background: green;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2em;
+    font-style: italic;
+}
+
+p.red-text {
+    color: red;
+}
+
+/* типы данных
+строки - ""
+числа - \d
+проценты - \d%
+размеры - \d(px|em|pt|%|rem|vw|vh)
+цвета - #[a-f0-9]{6} | rgba(r, g, b, a) | key
+адреса - url('...')
+ключевые слова - key
+
+*/
