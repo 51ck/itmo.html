@@ -65,3 +65,43 @@ p.red-text {
 ключевые слова - key
 
 */
+
+
+/* ПСЕВДОКЛАССЫ */
+
+a:hover {}
+
+a:link {}
+
+a:visited {}
+
+a:focus {}
+
+input:disabled {}
+
+input:enabled {}
+
+input:checked {}
+
+
+/*ПОЛОЖЕНИЕ В DOM-ДЕРЕВЕ*/
+:root /*- корневой элемент, по умолчанию - html*/
+
+li:nth-child(even) {} /*чётные*/
+
+li:nth-child(odd) {} /*нечётные*/
+
+li:nth-child(index) {} /*по номеру*/
+
+li:nth-child(an+b) {} /*по формуле*/
+
+li:first-child {}
+li:last-child {}
+
+/*ПСЕВДОЭЛЕМЕНТЫ*/
+
+p:first-letter {}
+p:first-line {}
+
+::before
+::after

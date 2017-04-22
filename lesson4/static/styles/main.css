@@ -1,0 +1,75 @@
+html {
+    font-family: helvetica, sans-serif;
+}
+
+div > span {
+    position: absolute;
+    background-color: inherit;
+    border-bottom-width: 1px;
+    border-radius: .25em;
+    top:  -.5em;
+    margin: 0 auto;
+    color: inherit;
+}
+
+.margin,
+.margin div {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.margin {
+    border: 1px solid green;
+    padding: 20px;
+    background: lightyellow;
+}
+
+.border {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-color: darkgray;
+}
+
+.padding {
+    padding: 20px;
+    background: lightcyan;
+    color: darkred;
+    border-color: black;
+}
+
+.content {
+    padding: 30px;
+    background: white;
+    color: black;
+    border: 1px dotted black;
+}
+
+.content > span {
+    position: static;
+    border: none;
+}
+
+/*visibility: hidden | collapse | visible*/
+
+/*MARGIN COLAPSE*/
+
+/* FLOATS */
+.float-block {
+    float: left;
+    background: lightyellow;
+    width: 350px;
+    /*height: 75px;*/
+    margin: 1em;
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p > span:nth-child{2n} {
+    color: red;
+}
