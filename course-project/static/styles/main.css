@@ -25,6 +25,8 @@ header {
 }
 
 .menu li {
+    position: relative;
+    z-index: 1;
     box-sizing: border-box;
     display: inline-block;
     background: darkgray;
@@ -53,9 +55,17 @@ header {
 
 /*  END OF MENU  */
 
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 480px;
+}
+
 /* SLIDER */
 
 .slider {
+    opacity: .7;
+    /*filter: alpha(opacity=);*/
     margin: 160px 0 0;
     padding: 0;
     height: 400px;
@@ -91,21 +101,22 @@ header {
 
 /* INFO BLOCKS */
 [class$="-block"] {
-    width: 31%;
+    position: relative;
     background-color: #eee;
     border-radius: 7px;
     border-bottom: 1px solid gray;
     background-image: url('../img/pat1.png');
-    background-size: 250px;
+    background-size: 150px;
+    margin: 10px;
+
 }
 
 .info-block {
-    display: inline-block;
     height: 200px;
 }
 
 .news-block {
-    float: right;
+    /*float: right;*/
     height: 400px;
 }
 /* END OF INFO BLOCKS */
