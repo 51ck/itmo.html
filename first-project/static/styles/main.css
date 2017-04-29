@@ -1,0 +1,115 @@
+:root {
+    font-family: helvetica, sans-serif;
+    color: #252525;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    background: #f3f3e6;
+}
+
+/*// SLIDER //*/
+
+.slider-section {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+}
+
+/*// HEADER //*/
+
+header {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    background: white;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 17px 0;
+}
+
+.header-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.branding {
+    font-family: georgia, serif;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 22px;
+}
+
+.menu {
+    display: inline-block;
+    width: calc(100% - 162px);
+    list-style: none;
+    padding: 7px 0;
+    margin: 0;
+    text-align: right;
+}
+
+.menu li {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 18px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu li a:hover,
+.menu li a.active {
+    color: #53adc7;
+}
+
+.menu li a.active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #53adc7;
+
+
+}
+
+
+
+/*// SIGN FORM //*/
+/*#172838*/
+/*#53adc7*/
+
+.sign-up-section {
+    background: #172838;
+    color: white;
+}
+
+
+
+
+
+/*// MAIN //*/
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
